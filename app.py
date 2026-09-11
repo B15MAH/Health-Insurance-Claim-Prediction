@@ -41,7 +41,7 @@ if submitted:
 
     input_data["gender"] = le_gender.transform(input_data["gender"])
     input_data["diabetic"] = le_diabetic.transform(input_data["diabetic"])
-    input_data["smoker"] = le_diabetic.transform(input_data["smoker"])
+    input_data["smoker"] = le_smoker.transform(input_data["smoker"])
 
     num_cols = ["age", "bmi", "bloodpressure", "children"]
     input_data[num_cols] = scaler.transform(input_data[num_cols])
